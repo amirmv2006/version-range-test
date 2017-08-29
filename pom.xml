@@ -7,11 +7,23 @@
     <groupId>ir.amv.snippets.version.range</groupId>
     <artifactId>multiproject</artifactId>
     <packaging>pom</packaging>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
     <modules>
         <module>lib</module>
         <module>core</module>
     </modules>
 
+    <scm>
+        <developerConnection>scm:git:https://github.com/amirmv2006/version-range-test.git</developerConnection>
+    </scm>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>versions-maven-plugin</artifactId>
+                <version>2.3-SNAPSHOT</version>
+        </plugin>
+        </plugins>
+    </build>
 </project>
